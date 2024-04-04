@@ -2,23 +2,25 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="./favicon.png" />
+		<link rel="icon" href="./wandern.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link rel="modulepreload" href="./_app/immutable/entry/start.MhuHwd1o.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/entry.wUeTfkRq.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.684EGfKM.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.x1vKPS-a.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.zMJaRgub.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.LdwEzxIk.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.13q5afuF.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.aVnu3b9f.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/0.IU5AeOT3.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.EpqYNhCB.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.bYCb_yLK.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">  <h1 data-svelte-h="svelte-e3ww2p">HikePlanner</h1> <p data-svelte-h="svelte-a64301">Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p> <button>Clicked 0 times</button> <p><strong data-svelte-h="svelte-4z8nqm">Abwärts [m]</strong> <label><input type="number" min="0" max="10000" value="0"> <input type="range" min="0" max="10000" value="0"></label></p> <p><strong data-svelte-h="svelte-12bkxll">Aufwärts [m]</strong> <label><input type="number" min="0" max="10000" value="0"> <input type="range" min="0" max="10000" value="0"></label></p> <p><strong data-svelte-h="svelte-gkflnq">Distanz [m]</strong> <label><input type="number" min="0" max="30000" value="0"> <input type="range" min="0" max="30000" value="0"></label></p> <button data-svelte-h="svelte-7qel70">Predict</button> <p></p> <table><tr><td data-svelte-h="svelte-1qjxbrr">Dauer:</td><td>n.a.</td></tr> <tr><td data-svelte-h="svelte-cb1clj">DIN33466:</td><td>n.a.</td></tr> <tr><td data-svelte-h="svelte-orpm3r">SAC:</td><td>n.a.</td></tr></table> 
+		<div style="display: contents">  <h1 data-svelte-h="svelte-1ta2pg3">Dein Hike Planner</h1> <p data-svelte-h="svelte-1gv5ya">Ermitteln Sie mühelos die Dauer Ihrer nächsten Wanderung. Geben Sie einfach die Höhenmeter aufwärts, abwärts und die Gesamtdistanz ein, und unser HikePlanner berechnet die voraussichtliche Zeit, die Sie für Ihr Abenteuer benötigen.</p> <p data-svelte-h="svelte-1de7pca">In der HikePlanner-Anwendung repräsentieren &quot;SAC&quot; und &quot;DIN33466&quot; geschätzte Wanderzeiten basierend auf dem Schwierigkeitsgrad nach Schweizer Alpen-Club Standards bzw. einer deutschen Industrienorm für die Planung und Berechnung von Wanderzeiten.</p> <p>Clicked 0 times </p>&gt;
+
+<p><strong data-svelte-h="svelte-4z8nqm">Abwärts [m]</strong> <label><input type="number" min="0" max="10000" value="0"> <input type="range" min="0" max="10000" value="0"></label></p> <p><strong data-svelte-h="svelte-12bkxll">Aufwärts [m]</strong> <label><input type="number" min="0" max="10000" value="0"> <input type="range" min="0" max="10000" value="0"></label></p> <p><strong data-svelte-h="svelte-gkflnq">Distanz [m]</strong> <label><input type="number" min="0" max="30000" value="0"> <input type="range" min="0" max="30000" value="0"></label></p> <button data-svelte-h="svelte-7qel70">Predict</button> <button data-svelte-h="svelte-jn3jzs">Reset</button> <p></p> <table><tr><td data-svelte-h="svelte-1qjxbrr">Dauer:</td><td>n.a.</td></tr> <tr><td data-svelte-h="svelte-cb1clj">DIN33466:</td><td>n.a.</td></tr> <tr><td data-svelte-h="svelte-orpm3r">SAC:</td><td>n.a.</td></tr></table> 
 			
 			<script>
 				{
-					__sveltekit_1jpd85b = {
+					__sveltekit_1lbc60o = {
 						base: new URL(".", location).pathname.slice(0, -1)
 					};
 
@@ -27,8 +29,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.MhuHwd1o.js"),
-						import("./_app/immutable/entry/app.LdwEzxIk.js")
+						import("./_app/immutable/entry/start.684EGfKM.js"),
+						import("./_app/immutable/entry/app.13q5afuF.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],

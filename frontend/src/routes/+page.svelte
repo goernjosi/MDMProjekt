@@ -20,6 +20,8 @@
     let sac = "n.a.";
 
     async function predict() {
+        increment();
+
         let result = await fetch(
             url +
                 "/api/predict?" +
@@ -38,17 +40,31 @@
         din33466 = data.din33466;
         sac = data.sac;
     }
+    function reset() {
+        downhill = 0;
+        uphill = 0;
+        length = 0;
+        prediction = "n.a.";
+        din33466 = "n.a.";
+        sac = "n.a.";
+    }
 </script>
 
-<h1>HikePlanner</h1>
-<p>
-    Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
 
-<button on:click={increment}>
-    Clicked {count}
-    {count === 1 ? "time" : "times"}
-</button>
+
+<h1>Dein Hike Planner</h1>
+<p>Ermitteln Sie mühelos die Dauer Ihrer nächsten Wanderung. Geben Sie einfach die Höhenmeter aufwärts, abwärts und die Gesamtdistanz ein, und unser HikePlanner berechnet die voraussichtliche Zeit, die Sie für Ihr Abenteuer benötigen.</p>
+<p>In der HikePlanner-Anwendung repräsentieren "SAC" und "DIN33466" geschätzte Wanderzeiten basierend auf dem Schwierigkeitsgrad nach Schweizer Alpen-Club Standards bzw. einer deutschen Industrienorm für die Planung und Berechnung von Wanderzeiten.</p>
+
+
+
+
+
+
+
+<p>
+    Clicked {count} {count === 1 ? "time" : "times"}
+</p>>
 
 <p>
     <strong>Abwärts [m]</strong>
@@ -75,6 +91,7 @@
 </p>
 
 <button on:click={predict}>Predict</button>
+<button on:click={reset}>Reset</button>
 
 <p></p>
 <table>
@@ -88,3 +105,5 @@
         <td>SAC:</td><td>{sac}</td>
     </tr>
 </table>
+
+
